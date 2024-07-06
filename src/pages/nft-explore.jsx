@@ -11,12 +11,16 @@ import TabContent from "react-bootstrap/TabContent";
 import TabPane from "react-bootstrap/TabPane";
 import Nav from "react-bootstrap/Nav";
 import clsx from "clsx";
+import { useState } from "react";
 // import Map from "./map";
 // import GoogleMapReact from "google-map-react";
 // import Capture from "./Capture";
 
 // Demo data
 import productData from "../data/products.json";
+import BidsData from "../data/bids.json";
+import History from "../data/history.json";
+import { useStateWithHistory } from "react-use";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
@@ -28,7 +32,11 @@ const location = {
     lng: -122.08427,
   };
 
-const Explore = () => (
+const Explore = () => {
+    const [bids,setBids]=useState(false);
+    const[details,setDetail]=useState(false);
+    const[history,setHistory]=useState(false);
+    return(
     <Wrapper>
         <SEO pageTitle="Explore Carousel" />
         <Header />
@@ -42,13 +50,13 @@ const Explore = () => (
         <div className={clsx("tab-wrapper-one")}>
             <nav className="tab-button-one">
                 <Nav as="div" className="nav-tabs">
-                    <Nav.Link as="button" eventKey="nav-home">
+                    <Nav.Link as="button" eventKey="nav-home"  onClick={()=>{setBids(true),setDetail(false),setHistory(false)}}>
                         Bids
                     </Nav.Link>
-                    <Nav.Link as="button" eventKey="nav-profile">
+                    <Nav.Link as="button" eventKey="nav-profile"  onClick={()=>{setDetail(true),setBids(false),setHistory(false)}}>
                         Details
                     </Nav.Link>
-                    <Nav.Link as="button" eventKey="nav-contact">
+                    <Nav.Link as="button" eventKey="nav-contact" onClick={()=>{setHistory(true),setBids(false),setDetail(false)}}>
                         History
                     </Nav.Link>
                 </Nav>
@@ -59,6 +67,7 @@ const Explore = () => (
        
         </div>
       </div>
+      {bids===true &&
             <ExploreCarouselBothArea
                 space={4}
                 data={{
@@ -69,9 +78,35 @@ const Explore = () => (
                     products: productData.slice(0, 8),
                 }}
             />
+}
+{history===true &&
+            <ExploreCarouselBothArea
+                space={4}
+                data={{
+                    section_title: {
+                        // title: "Explore Carousel Both",
+                        title: "Products",
+                    },
+                    products: History.slice(0, 8),
+                }}
+            />
+}
+{details===true &&
+            <ExploreCarouselBothArea
+                space={4}
+                data={{
+                    section_title: {
+                        // title: "Explore Carousel Both",
+                        title: "Products",
+                    },
+                    products: BidsData.slice(0, 8),
+                }}
+            />
+}
         </main>
         <Footer />
     </Wrapper>
-);
+    )
+};
 
 export default Explore;

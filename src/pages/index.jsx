@@ -72,7 +72,6 @@ const Home02 = () => {
                     }}
                     gap={5}
                 />
-                <ServiceArea data={content["service-section"]} />
                 <ExploreProductArea
                     data={{
                         ...content["explore-product-section"],
