@@ -2,7 +2,7 @@ import Head from "next/head";
 import PropTypes from "prop-types";
 
 const SEO = ({ pageTitle }) => {
-    const title = `${pageTitle} || Nuron - NFT Marketplace Template`;
+    const title = `${pageTitle} || Myraymarket - NFT Marketplace Template`;
     return (
         <Head>
             <title>{title}</title>
