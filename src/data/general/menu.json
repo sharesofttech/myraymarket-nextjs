@@ -1,0 +1,157 @@
+[
+    {
+        "id": 1,
+        "text": "NFT Explorer",
+        "path": "/nft-explore",
+        "submenu": [
+            {
+                "id": 11,
+                "text": "Certificate of Title",
+                "path": "/",
+                "icon": "feather-home"
+            },
+            {
+                "id": 12,
+                "text": "Digital Artwork",
+                "path": "/",
+                "icon": "feather-home"
+            },
+            {
+                "id": 13,
+                "text": "Membership",
+                "path": "/",
+                "icon": "feather-home"
+            },
+            {
+                "id": 14,
+                "text": "Metaverse",
+                "path": "/",
+                "icon": "feather-home"
+            }
+        ]
+    },
+
+    {
+        "id": 3,
+        "text": "NFT Staking",
+        "path": "/explore-03",
+        "submenu": [
+            {
+                "id": 11,
+                "text": "Explore",
+                "path": "/explore-01"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "text": "Contact Us",
+        "path": "#!",
+        "megamenu": [
+            {
+                "id": 43,
+                "submenu": [
+                    {
+                        "id": 430,
+                        "text": "Product",
+                        "path": "/product",
+                        "icon": "feather-folder"
+                    },
+                    {
+                        "id": 431,
+                        "text": "Product Details",
+                        "path": "/product/delta25",
+                        "icon": "feather-layout"
+                    }
+                ]
+            },
+            {
+                "id": 44,
+                "submenu": [
+                    {
+                        "id": 441,
+                        "text": "About Us",
+                        "path": "/about",
+                        "icon": "feather-award"
+                    },
+                    {
+                        "id": 442,
+                        "text": "Contact",
+                        "path": "/contact",
+                        "icon": "feather-headphones"
+                    },
+                    {
+                        "id": 443,
+                        "text": "Support/FAQ",
+                        "path": "/support",
+                        "icon": "feather-help-circle"
+                    },
+                    {
+                        "id": 444,
+                        "text": "Terms & Condition",
+                        "path": "/terms-condition",
+                        "icon": "feather-list"
+                    },
+                    {
+                        "id": 445,
+                        "text": "Coming Soon",
+                        "path": "/coming-soon",
+                        "icon": "feather-clock"
+                    },
+                    {
+                        "id": 446,
+                        "text": "Maintenance",
+                        "path": "/maintenance",
+                        "icon": "feather-cpu"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "text": "Language",
+        "path": "/blog",
+        "submenu": [
+            {
+                "id": 51,
+                "text": "한국어",
+                "path": "/",
+                "icon": "feather-fast-forward"
+            },
+            {
+                "id": 52,
+                "text": "English",
+                "path": "/",
+                "icon": "feather-fast-forward"
+            },
+            {
+                "id": 53,
+                "text": "中文",
+                "path": "/",
+                "icon": "feather-fast-forward"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "text": "Theme",
+        "path": "/contact",
+		"submenu": [
+            {
+                "id": 51,
+                "text": "Light",
+                "path": "/",
+                "icon": "feather-fast-forward"
+       
+            },
+            {
+                "id": 52,
+                "text": "Dark",
+                "path": "/",
+                "icon": "feather-fast-forward"
+                  
+            }
+        ]
+    }
+]
