@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 const SubMenu = ({ menu }) => {
 
     const { setTheme } = useTheme();
-    console.log("menuuusss",menu);
+ 
     return(
     <ul className="submenu">
         {menu.map((nav) => (

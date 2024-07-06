@@ -9,10 +9,12 @@ import SoldOutWidget from "@widgets/sold-out-widget";
 import FooterLinkWidget from "@widgets/footer-link-widget";
 import SocialWidget from "@widgets/social-widget";
 import { ItemType } from "@utils/types";
+import Logo from "@components/logo";
 
 // Demo data
 import footerData from "../../../data/general/footer-01.json";
 import contactData from "../../../data/general/contact.json";
+import headerData from "../../../data/general/header-01.json";
 
 const Footer = ({ space, className, data }) => (
     <>
@@ -58,23 +60,26 @@ const Footer = ({ space, className, data }) => (
                 <div className="row gx-5">
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="widget-content-wrapper">
-                            <LogoWidget data={footerData["logo-widget"]} />
+                            {/* <LogoWidget data={footerData["logo-widget"]} /> */}
                             
                             {/* <NewsletterWidget
                                 data={footerData["newsletter-widget"]}
                             /> */}
+                               <QuicklinkWidget
+                            data={footerData["nft-explorer"]}
+                        />
                         </div>
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_mobile--40">
                         <QuicklinkWidget
-                            data={footerData["quicklink-widget"]}
+                            data={footerData["nft-staking"]}
                         />
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
                         <InformationWidget
-                            data={footerData["information-widget"]}
+                            data={footerData["contact-us"]}
                         />
                     </div>
 
@@ -89,17 +94,22 @@ const Footer = ({ space, className, data }) => (
         <div className="copy-right-one ptb--20 bg-color--1">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-12 col-md-12 col-sm-12">
+                        <div className="copyright-right">
+                        <Logo logo={headerData.logo} />
+                        </div>
+                   </div>            
+                    <div className="col-lg-12 col-md-12 col-sm-12">
+                        <div className="copyright-right">
+                            <SocialWidget socials={contactData.socials} />
+                        </div>
+                    </div>
+                    <div className="col-lg-12 col-md-12 col-sm-12">
                         <div className="copyright-left">
                             <span>{footerData.copyright_text}</span>
                             <FooterLinkWidget
                                 data={footerData["footer-link-widget"]}
                             />
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
-                        <div className="copyright-right">
-                            <SocialWidget socials={contactData.socials} />
                         </div>
                     </div>
                 </div>

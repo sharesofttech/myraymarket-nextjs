@@ -2,7 +2,7 @@
     {
         "id": 1,
         "text": "NFT Explorer",
-        "path": "/nft-explore",
+        "path": "/explore-03",
         "submenu": [
             {
                 "id": 11,
@@ -34,7 +34,7 @@
     {
         "id": 3,
         "text": "NFT Staking",
-        "path": "/explore-03",
+        "path": "/nft-explore",
         "submenu": [
             {
                 "id": 11,
@@ -47,66 +47,28 @@
         "id": 4,
         "text": "Contact Us",
         "path": "#!",
-        "megamenu": [
+        "submenu":[
+          
             {
-                "id": 43,
-                "submenu": [
-                    {
-                        "id": 430,
-                        "text": "Product",
-                        "path": "/product",
-                        "icon": "feather-folder"
-                    },
-                    {
-                        "id": 431,
-                        "text": "Product Details",
-                        "path": "/product/delta25",
-                        "icon": "feather-layout"
-                    }
-                ]
+                "id": 442,
+                "text": "Contact",
+                "path": "/contact",
+                "icon": "feather-headphones"
             },
             {
-                "id": 44,
-                "submenu": [
-                    {
-                        "id": 441,
-                        "text": "About Us",
-                        "path": "/about",
-                        "icon": "feather-award"
-                    },
-                    {
-                        "id": 442,
-                        "text": "Contact",
-                        "path": "/contact",
-                        "icon": "feather-headphones"
-                    },
-                    {
-                        "id": 443,
-                        "text": "Support/FAQ",
-                        "path": "/support",
-                        "icon": "feather-help-circle"
-                    },
-                    {
-                        "id": 444,
-                        "text": "Terms & Condition",
-                        "path": "/terms-condition",
-                        "icon": "feather-list"
-                    },
-                    {
-                        "id": 445,
-                        "text": "Coming Soon",
-                        "path": "/coming-soon",
-                        "icon": "feather-clock"
-                    },
-                    {
-                        "id": 446,
-                        "text": "Maintenance",
-                        "path": "/maintenance",
-                        "icon": "feather-cpu"
-                    }
-                ]
+                "id": 443,
+                "text": "Support/FAQ",
+                "path": "/support",
+                "icon": "feather-help-circle"
+            },
+            {
+                "id": 444,
+                "text": "Terms & Condition",
+                "path": "/terms-condition",
+                "icon": "feather-list"
             }
         ]
+       
     },
     {
         "id": 5,

@@ -561,6 +561,9 @@ nav {
     margin: 0 auto;
     position: relative;
 }
+.overlay.changewallet .popup {
+    max-width: 40%;
+}
 .overlay button.closeButton {
     position: absolute;
     width: 35px;
@@ -649,7 +652,53 @@ nav {
 .overlay.changewallet button.mt--30.btn.btn-primary {
     background: var(--color-primary-alta) !important;
 }
+.dropdown i.d-none.d-xl-block.bi.bi-chevron-down.position-absolute.top-0.fw-bold.pt-2.mt-1 {
+    display: none !important;
+}
+.support-accordion {
+    display: none;
+}    
+.faq_section .content {
+    float: left;
+    width: 50%;
+}
+.rn-section-gapTop {
+    padding-top: 0;
+}
+.rn-support-read .read-card h4 {
+    margin-bottom: 15px;
+}
+.rn-support-read .read-card {
+    padding-right: 15px;
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    border-bottom: 1px solid;
+}
+.rn-support-read .read-card h4 {
+    margin-bottom: 15px;
+    float: left;
+    width: 50%;
+}
+.copyright-left .privacy {
+    display: none !important;
+}
+.copy-right-one .copyright-right {
+    justify-content: flex-start!important;
+    margin-bottom: 2em!important;
+}
+.copy-right-one .copyright-right .social-copyright {
+    gap: 65px!important;
+}
 
+
+
+@media only screen and (min-width: 1600px) {
+    .haeder-default .container {
+        max-width: 1360px;
+    } 
+}
 @media only screen and (max-width: 767px) {
     .overlay .popup {
         max-width: 85%;
@@ -667,6 +716,11 @@ nav {
     .profile_page button.btn.btn-primary-alta {
         width: 125px;
     }
-    
+    .copy-right-one .copyright-right .social-copyright {
+        gap: 15px !important;
+    }
+    .overlay.changewallet .popup {
+        max-width: 85%;
+    }   
     
 }

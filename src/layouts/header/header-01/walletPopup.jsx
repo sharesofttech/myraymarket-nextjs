@@ -1,6 +1,11 @@
 import React from 'react';
 import clsx from "clsx";
 import { Button } from 'react-bootstrap';
+import Image from 'next/image';
+import icon1 from "../../../../public/images/logo/icon1.png";
+import icon2 from "../../../../public/images/logo/icon2.png";
+import icon4 from "../../../../public/images/logo/icon4.png";
+import icon3 from "../../../../public/images/logo/icon3.png";
 
 const WalletPopup = ({ show, onClose, children }) => {
   if (!show) {
@@ -38,6 +43,7 @@ const WalletPopup = ({ show, onClose, children }) => {
                     className="mt--30"
                     // onClick={handleBidModal}
                 >
+                  <Image src={icon1}  style={{borderRadius: "10px", verticalAlign: "middle",width:"30px",marginRight:"10px"}}></Image>
                  MYRAY Wallet
                 </Button>
                 <Button
@@ -45,6 +51,7 @@ const WalletPopup = ({ show, onClose, children }) => {
                     className="mt--30"
                     // onClick={handleBidModal}
                 >
+                      <Image src={icon2}   style={{borderRadius: "10px", verticalAlign: "middle",width:"30px",marginRight:"10px"}}></Image>
                   Metamask
                 </Button>
                 <Button
@@ -52,6 +59,7 @@ const WalletPopup = ({ show, onClose, children }) => {
                     className="mt--30"
                     // onClick={handleBidModal}
                 >
+                       <Image src={icon3}  style={{borderRadius: "10px", verticalAlign: "middle",width:"30px",marginRight:"10px"}}></Image>
               Kaikas
                 </Button>
                 <Button
@@ -59,6 +67,7 @@ const WalletPopup = ({ show, onClose, children }) => {
                     className="mt--30"
                     // onClick={handleBidModal}
                 >
+                      <Image src={icon4} style={{borderRadius: "10px", verticalAlign: "middle",width:"30px",marginRight:"10px"}}></Image>
                 Wallet Connect
                 </Button>
 

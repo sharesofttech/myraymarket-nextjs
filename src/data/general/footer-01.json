@@ -13,6 +13,72 @@
         "title": "Get The Latest Nuron Updates",
         "note": "Email is safe. We don't spam."
     },
+    "nft-explorer": {
+        "title": "NFT Explorer",
+        "menu": [
+            {
+                "id": 1,
+                "text": "Certificate of Title NFT",
+                "path": "/explore-01"
+            },
+            {
+                "id": 2,
+                "text": "Digital Artwork NFT",
+                "path": "/about"
+            },
+            {
+                "id": 3,
+                "text": "Membership NFT",
+                "path": "/about"
+            }
+           
+         
+        ]
+    },
+    "nft-staking": {
+        "title": "NFT Staking",
+        "menu": [
+            {
+                "id": 1,
+                "text": "Staking Request",
+                "path": "/explore-01"
+            },
+            {
+                "id": 2,
+                "text": "Status of Staking",
+                "path": "/about"
+            }
+           
+         
+        ]
+    },
+    "contact-us": {
+        "title": "Contact us",
+        "menu": [
+            {
+                "id": 1,
+                "text": "Contact us",
+                "path": "/explore-01"
+            },
+            {
+                "id": 2,
+                "text": "FAQ",
+                "path": "/support"
+            },
+            {
+                "id": 2,
+                "text": "Privacy Policy",
+                "path": "/"
+            },
+            {
+                "id": 2,
+                "text": "Terms of Service",
+                "path": "/"
+            }
+           
+         
+        ]
+    },
     "quicklink-widget": {
         "title": "Nuron",
         "menu": [
@@ -142,5 +208,5 @@
             }
         ]
     },
-    "copyright_text": "©2022 Nuron, Inc. All rights reserved"
+    "copyright_text": "©2024 All Rights reserved @Myraymarket"
 }

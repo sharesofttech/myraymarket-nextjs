@@ -137,7 +137,7 @@ const PersonalInformation = () => (
             <Button className="mr--15" color="primary-alta" size="medium">
                 Cancel
             </Button>
-            <Button size="medium">Save</Button>
+            <Button className="mr--15" color="primary-alta" size="medium">Save</Button>
         </div>
     </div>
 );
