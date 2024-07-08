@@ -7,26 +7,26 @@
             {
                 "id": 11,
                 "text": "Certificate of Title",
-                "path": "/",
-                "icon": "feather-home"
+                "path": "/"
+               
             },
             {
                 "id": 12,
                 "text": "Digital Artwork",
-                "path": "/",
-                "icon": "feather-home"
+                "path": "/"
+              
             },
             {
                 "id": 13,
                 "text": "Membership",
-                "path": "/",
-                "icon": "feather-home"
+                "path": "/"
+              
             },
             {
                 "id": 14,
                 "text": "Metaverse",
-                "path": "/",
-                "icon": "feather-home"
+                "path": "/"
+               
             }
         ]
     },
@@ -52,20 +52,20 @@
             {
                 "id": 442,
                 "text": "Contact",
-                "path": "/contact",
-                "icon": "feather-headphones"
+                "path": "/contact"
+              
             },
             {
                 "id": 443,
                 "text": "Support/FAQ",
-                "path": "/support",
-                "icon": "feather-help-circle"
+                "path": "/support"
+               
             },
             {
                 "id": 444,
                 "text": "Terms & Condition",
-                "path": "/terms-condition",
-                "icon": "feather-list"
+                "path": "/terms-condition"
+           
             }
         ]
        
@@ -78,21 +78,16 @@
             {
                 "id": 51,
                 "text": "한국어",
-                "path": "/",
-                "icon": "feather-fast-forward"
+                "path": "/"
+             
             },
             {
                 "id": 52,
                 "text": "English",
-                "path": "/",
-                "icon": "feather-fast-forward"
-            },
-            {
-                "id": 53,
-                "text": "中文",
-                "path": "/",
-                "icon": "feather-fast-forward"
+                "path": "/"
+              
             }
+         
         ]
     },
     {
@@ -103,15 +98,15 @@
             {
                 "id": 51,
                 "text": "Light",
-                "path": "/",
-                "icon": "feather-fast-forward"
+                "path": "/"
+             
        
             },
             {
                 "id": 52,
                 "text": "Dark",
-                "path": "/",
-                "icon": "feather-fast-forward"
+                "path": "/"
+              
                   
             }
         ]
