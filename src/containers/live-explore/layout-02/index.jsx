@@ -14,7 +14,7 @@ const LiveExploreArea = ({ data, className, space, gap }) => (
     >
         <div className="container">
             {data?.section_title && (
-                <div className="row mb--50">
+                <div className="row mb--20">
                     <div className="col-lg-12">
                         <SectionTitle {...data.section_title} />
                     </div>

@@ -33,14 +33,14 @@ const Home02 = () => {
                 Number(new Date(b.published_at)) -
                 Number(new Date(a.published_at))
         )
-        .slice(0, 5);
+        .slice(0, 4);
     const newestData = productData
         .sort(
             (a, b) =>
                 Number(new Date(b.published_at)) -
                 Number(new Date(a.published_at))
         )
-        .slice(0, 5);
+        .slice(0, 4);
     return (
         <Wrapper>
             <SEO pageTitle="Home Page" />

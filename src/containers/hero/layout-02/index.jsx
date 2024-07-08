@@ -37,7 +37,7 @@ const SliderOptions = {
 
 const HeroArea = ({ data }) => (
     <div className="banner-area pt--25">
-        <div className="container-fluid">
+        <div className="container">
             <div className="row">
                 {data?.items && (
                     <Slider

@@ -164,7 +164,7 @@ const Header = ({ className }) => {
       {/* <i className="bi bi-person-circle"></i> */}
       {/* <i className="fa-solid fa-user"></i> */}
           <div className="d-none d-xl-flex admin_name">
-            {/* User Login */}
+           Connect 
             {/* <Button>Connect</Button> */}
          
           </div>

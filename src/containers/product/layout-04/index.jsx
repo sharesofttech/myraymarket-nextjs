@@ -8,13 +8,13 @@ import { ProductType, SectionTitleType } from "@utils/types";
 const ProductArea = ({ space, className, data }) => (
     <div
         className={clsx(
-            "rn-new-items",
+            "rn-new-items new-nft",
             space === 1 && "rn-section-gapTop",
             className
         )}
     >
         <div className="container">
-            <div className="row mb--50 align-items-center">
+            <div className="row mb--20 align-items-center">
                 {data?.section_title && (
                     <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                         <SectionTitle
@@ -46,7 +46,7 @@ const ProductArea = ({ space, className, data }) => (
                             data-sal="slide-up"
                             data-sal-delay="150"
                             data-sal-duration="800"
-                            className="col-5 col-lg-4 col-md-6 col-sm-6 col-12"
+                            className="col-3 col-lg-3 col-md-6 col-sm-6 col-12"
                         >
                             <Product
                                 title={prod.title}
