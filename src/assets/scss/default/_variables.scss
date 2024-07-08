@@ -72,9 +72,13 @@
     //transition easing
     --transition: 0.4s;
 
-    // Font Family
-    --font-primary: "Roboto", sans-serif;
-    --font-secondary: "Roboto", sans-serif;
+    // Font Family for korean language
+    // --font-primary: '넥슨Lv2고딕 OTF',"NEXON Lv2 Gothic OTF", sans-serif;
+    // --font-secondary: '넥슨Lv2고딕 OTF',"NEXON Lv2 Gothic OTF", sans-serif;
+
+    //    // Font Family for 
+       --font-primary: "Roboto", sans-serif;
+       --font-secondary: "Roboto", sans-serif;
 
     //Fonts Size
     --font-size-b1: 14px;
