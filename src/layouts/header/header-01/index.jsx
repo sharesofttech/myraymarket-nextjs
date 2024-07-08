@@ -161,10 +161,11 @@ const Header = ({ className }) => {
         style={{height:30,width:30}}
       /> */}
        {/* <i className="bi bi-alarm"></i> */}
-      <i className="bi bi-person-circle"></i>
+      {/* <i className="bi bi-person-circle"></i> */}
       {/* <i className="fa-solid fa-user"></i> */}
           <div className="d-none d-xl-flex admin_name">
-            User Login
+            {/* User Login */}
+            {/* <Button>Connect</Button> */}
          
           </div>
           <span><i className="d-none d-xl-block bi bi-chevron-down position-absolute top-0 fw-bold pt-2 mt-1"></i></span>

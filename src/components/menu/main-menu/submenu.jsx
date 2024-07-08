@@ -10,7 +10,11 @@ const SubMenu = ({ menu }) => {
  
     return(
     <ul className="submenu">
-        {menu.map((nav) => (
+        {menu.map((nav) => {
+            // console.log("navsss",nav)
+            return(
+
+            
             <li key={nav.id}>
                 <Anchor
                     path={nav.path}
@@ -20,9 +24,38 @@ const SubMenu = ({ menu }) => {
                 >
                     {nav.text}
                     {nav?.icon && <i className={`feather ${nav.icon}`} />}
+                  
                 </Anchor>
+                {nav?.submenu && 
+                <ul className="submenuchild">
+             {   nav?.submenu?.length>0 && nav?.submenu?.map((item)=>{
+                    return(
+                        
+                        <li key={item.id}>
+                           <Anchor
+                               path={item.path}
+                       className={item.isLive ? "live-expo" : ""}
+                           onClick={() =>item.text=="Light"? setTheme("light"): item.text=="Dark"?setTheme("dark"):null}
+    // onClick={()=>console.log("checkingss")}
+                      >
+         {item.text}
+    {item?.icon && <i className={`feather ${item.icon}`} />}
+    
+    </Anchor>
+    </li>
+   
+                    )
+                
+                })}
+                 </ul>
+                  
+              
+
+                    }
+               
             </li>
-        ))}
+            )
+})}
     </ul>
     )
 };
