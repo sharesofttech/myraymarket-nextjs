@@ -60,8 +60,8 @@ Slider.propTypes = {
 };
 
 Slider.defaultProps = {
-    prevIcon: "feather-arrow-left",
-    nextIcon: "feather-arrow-right",
+    prevIcon: "bi bi-chevron-left",
+    nextIcon: "bi bi-chevron-right",
 };
 
 export default Slider;
