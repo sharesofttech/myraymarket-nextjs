@@ -6,6 +6,7 @@ import Logo from "@components/logo";
 import { slideToggle, slideUp } from "@utils/methods";
 import SubMenu from "./submenu";
 import MegaMenu from "./megamenu";
+import { setLanguage } from "src/pages";
 
 const MobileMenu = ({ isOpen, onClick, menu, logo }) => {
     const onClickHandler = (e) => {
@@ -54,7 +55,9 @@ const MobileMenu = ({ isOpen, onClick, menu, logo }) => {
                                                 : (e) => e
                                         }
                                     >
-                                        {nav.text}
+                                        {/* {nav.text} */}
+                                        {global?.language!=undefined && global.language[nav?.text]!=undefined? global?.language[nav?.text] : nav.text}
+
                                     </Anchor>
                                     {nav?.submenu && (
                                         <SubMenu menu={nav.submenu} />
