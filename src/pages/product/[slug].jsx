@@ -18,7 +18,8 @@ const ProductDetails = ({ product, recentViewProducts, relatedProducts }) => (
         <main id="main-content">
             <Breadcrumb
                 // pageTitle="Product Details"
-                pageTitle={global.language["Product Details"]}
+                // pageTitle={global.language["Product Details"]}
+                pageTitle={  global?.language!=undefined && global.language["Product Details"]!=undefined? global?.language["Product Details"] : "Product Details"}
                 currentPage="Product Details"
             />
             <ProductDetailsArea product={product} />
