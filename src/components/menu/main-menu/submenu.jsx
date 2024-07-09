@@ -14,18 +14,18 @@ const SubMenu = ({ menu }) => {
     <ul className="submenu">
         {menu.map((nav) => {
             // console.log("navsss",nav)
-            // console.log("globalsss",global.language)
+            // console.log("globalsss",global.language["Explore Product"])
             return(
 
-            
+                
             <li key={nav.id}>
                 <Anchor
                     path={nav.path}
                     className={nav.isLive ? "live-expo" : ""}
                     onClick={() =>
                       { nav.text=="Light"? setTheme("light"): nav.text=="Dark"?setTheme("dark"):null
-                        nav.language=="ko"?setLanguage("ko"):setLanguage("en")
-
+                        nav.language=="ko"?setLanguage("ko"): nav.language=="en" ?setLanguage("en"):null
+                        nav.language=="ko"?global.code="ko": nav.language=="en"?global.code="en":null
 
                       }
                     }
@@ -33,7 +33,7 @@ const SubMenu = ({ menu }) => {
                 >
                     {/* {nav.text} */}
                     {/* {global.language?.nav?.text} */}
-                    {global?.language[nav?.text]}
+                    {global?.language!=undefined && global.language[nav?.text]!=undefined? global?.language[nav?.text] : nav.text}
                     {nav?.icon && <i className={`feather ${nav.icon}`} />}
                   
                 </Anchor>
@@ -48,7 +48,8 @@ const SubMenu = ({ menu }) => {
                        className={item.isLive ? "live-expo" : ""}
                        onClick={() =>
                         { nav.text=="Light"? setTheme("light"): nav.text=="Dark"?setTheme("dark"):null
-                          nav.language=="ko"?setLanguage("ko"):setLanguage("en")
+                            nav.language=="ko"?setLanguage("ko"): nav.language=="en" ?setLanguage("en"):null
+                            nav.language=="ko"?global.code="ko": nav.language=="en"?global.code="en":null
   
   
                         }
@@ -56,7 +57,9 @@ const SubMenu = ({ menu }) => {
                         //    onClick={() =>item.text=="Light"? setTheme("light"): item.text=="Dark"?setTheme("dark"):null}
     // onClick={()=>console.log("checkingss")}
                       >
-         {item.text}
+         {/* {item.text} */}
+         {global?.language!=undefined && global.language[item?.text]!=undefined? global?.language[item?.text] : item.text}
+
     {item?.icon && <i className={`feather ${item.icon}`} />}
     
     </Anchor>

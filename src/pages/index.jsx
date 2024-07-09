@@ -37,8 +37,7 @@ export async function setLanguage(language){
 }
 
 const Home02 = () => {
-   
-    // console.log("checksss",global.code===undefined)
+  
     if(global?.code===undefined  || global.code=="en"){
         global.language=englishLanguage;
     }

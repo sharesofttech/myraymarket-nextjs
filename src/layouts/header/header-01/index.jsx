@@ -165,7 +165,7 @@ const Header = ({ className }) => {
       {/* <i className="fa-solid fa-user"></i> */}
           <div className="d-none d-xl-flex admin_name">
            {/* Connect  */}
-           {global?.language["connect"]}
+           {global.language!=undefined ?global?.language["connect"] :"Connect"}
             {/* <Button>Connect</Button> */}
          
           </div>

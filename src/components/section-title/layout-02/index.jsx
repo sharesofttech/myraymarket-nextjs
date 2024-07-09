@@ -11,7 +11,7 @@ const SectionTitle = ({ title, className, disableAnimation, ...restProps }) => {
         data-sal={!disableAnimation && "slide-up"}
         data-sal-duration="800"
         {...restProps}
-        dangerouslySetInnerHTML={{ __html: global.language[title] }}
+        dangerouslySetInnerHTML={{ __html:  global?.language!=undefined && global.language[title]!=undefined? global?.language[title] : title }}
     />
 )};
 

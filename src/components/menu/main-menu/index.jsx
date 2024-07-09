@@ -16,7 +16,8 @@ const MainMenu = ({ menu }) => (
             >
                 <Anchor className="its_new" path={nav.path}>
                     {/* {nav.text} */}
-                    {global?.language[nav?.text]}
+                    {global?.language!=undefined && global.language[nav?.text]!=undefined? global?.language[nav?.text] : nav.text}
+                    {/* {global?.language!=undefined ? global?.language[nav?.text]:nav.text} */}
                 </Anchor>
                 {nav?.submenu && <SubMenu menu={nav.submenu} />}
                 {nav?.megamenu && <MegaMenu menu={nav.megamenu} />}
