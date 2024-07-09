@@ -1,17 +1,20 @@
 import PropTypes from "prop-types";
 import Anchor from "@ui/anchor";
 import { useTheme } from "next-themes";
+import { setLanguage } from "src/pages";
 
 
 
 const SubMenu = ({ menu }) => {
 
     const { setTheme } = useTheme();
+    
  
     return(
     <ul className="submenu">
         {menu.map((nav) => {
             // console.log("navsss",nav)
+            // console.log("globalsss",global.language)
             return(
 
             
@@ -19,10 +22,18 @@ const SubMenu = ({ menu }) => {
                 <Anchor
                     path={nav.path}
                     className={nav.isLive ? "live-expo" : ""}
-                    onClick={() =>nav.text=="Light"? setTheme("light"): nav.text=="Dark"?setTheme("dark"):null}
+                    onClick={() =>
+                      { nav.text=="Light"? setTheme("light"): nav.text=="Dark"?setTheme("dark"):null
+                        nav.language=="ko"?setLanguage("ko"):setLanguage("en")
+
+
+                      }
+                    }
                     // onClick={()=>console.log("checkingss")}
                 >
-                    {nav.text}
+                    {/* {nav.text} */}
+                    {/* {global.language?.nav?.text} */}
+                    {global?.language[nav?.text]}
                     {nav?.icon && <i className={`feather ${nav.icon}`} />}
                   
                 </Anchor>
@@ -35,7 +46,14 @@ const SubMenu = ({ menu }) => {
                            <Anchor
                                path={item.path}
                        className={item.isLive ? "live-expo" : ""}
-                           onClick={() =>item.text=="Light"? setTheme("light"): item.text=="Dark"?setTheme("dark"):null}
+                       onClick={() =>
+                        { nav.text=="Light"? setTheme("light"): nav.text=="Dark"?setTheme("dark"):null
+                          nav.language=="ko"?setLanguage("ko"):setLanguage("en")
+  
+  
+                        }
+                      }
+                        //    onClick={() =>item.text=="Light"? setTheme("light"): item.text=="Dark"?setTheme("dark"):null}
     // onClick={()=>console.log("checkingss")}
                       >
          {item.text}

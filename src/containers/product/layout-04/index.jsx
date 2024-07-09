@@ -5,7 +5,9 @@ import SectionTitle from "@components/section-title/layout-02";
 import Anchor from "@ui/anchor";
 import { ProductType, SectionTitleType } from "@utils/types";
 
-const ProductArea = ({ space, className, data }) => (
+const ProductArea = ({ space, className, data }) => {
+    // console.log("dataaas",data)
+    return(
     <div
         className={clsx(
             "rn-new-items new-nft",
@@ -64,7 +66,7 @@ const ProductArea = ({ space, className, data }) => (
             )}
         </div>
     </div>
-);
+)};
 
 ProductArea.propTypes = {
     space: PropTypes.oneOf([1, 2]),

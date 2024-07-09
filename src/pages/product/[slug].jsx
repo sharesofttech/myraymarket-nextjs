@@ -17,7 +17,8 @@ const ProductDetails = ({ product, recentViewProducts, relatedProducts }) => (
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Product Details"
+                // pageTitle="Product Details"
+                pageTitle={global.language["Product Details"]}
                 currentPage="Product Details"
             />
             <ProductDetailsArea product={product} />

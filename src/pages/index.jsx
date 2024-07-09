@@ -16,12 +16,36 @@ import homepageData from "../data/homepages/home-02.json";
 import sellerData from "../data/sellers.json";
 import productData from "../data/products.json";
 import collectionsData from "../data/collections.json";
+import englishLanguage from "../data/language/english.json";
+import koreanLanguage from "../data/language/korean.json";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
+export async function setLanguage(language){
+    // console.log("languagesss",global.code)
+    global.code=language
+    if(language=="ko"){
+        global.language=koreanLanguage
+    }
+    else {
+        global.language=englishLanguage
+    }
+
+
+}
+
 const Home02 = () => {
+   
+    // console.log("checksss",global.code===undefined)
+    if(global?.code===undefined  || global.code=="en"){
+        global.language=englishLanguage;
+    }
+    else {
+        global.language=koreanLanguage;
+    }
+  
     const content = normalizedData(homepageData?.content || []);
     const liveAuctionData = productData
         .filter(

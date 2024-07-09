@@ -1,16 +1,19 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
 
-const SectionTitle = ({ title, className, disableAnimation, ...restProps }) => (
+const SectionTitle = ({ title, className, disableAnimation, ...restProps }) => {
+    
+    // console.log("tilesss",title)
+    return(
     <h3
         className={clsx("title", className)}
         data-sal-delay="150"
         data-sal={!disableAnimation && "slide-up"}
         data-sal-duration="800"
         {...restProps}
-        dangerouslySetInnerHTML={{ __html: title }}
+        dangerouslySetInnerHTML={{ __html: global.language[title] }}
     />
-);
+)};
 
 SectionTitle.propTypes = {
     title: PropTypes.string.isRequired,

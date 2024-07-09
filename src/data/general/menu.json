@@ -98,13 +98,15 @@
             {
                 "id": 51,
                 "text": "한국어",
-                "path": "/"
+                "path": "/",
+                "language":"ko"
                
             },
             {
                 "id": 52,
                 "text": "English",
-                "path": "/"
+                "path": "/",
+                "language":"en"
                
             }
         ]
