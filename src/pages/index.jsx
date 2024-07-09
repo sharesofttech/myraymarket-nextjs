@@ -38,6 +38,7 @@ export async function setLanguage(language){
 
 const Home02 = () => {
   
+    console.log("globallanguage",global.language,global.code);
     if(global?.code===undefined  || global.code=="en"){
         global.language=englishLanguage;
     }
