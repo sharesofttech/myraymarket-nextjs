@@ -15,15 +15,19 @@ const BidTab = ({ className, bids, owner, properties, tags, history }) => (
                 <Nav as="div" className="nav-tabs">
                     <Nav.Link as="button" eventKey="nav-home">
                         {/* Bids */}
-                        {global.language["Bids"]}
+                        {/* {global.language["Bids"]} */}
+                        {global?.language!=undefined && global.language["Bids"]!=undefined? global?.language["Bids"] : "Bids"}
                     </Nav.Link>
                     <Nav.Link as="button" eventKey="nav-profile">
                         {/* Details */}
-                        {global.language["Details"]}
+                        {/* {global.language["Details"]} */}
+                        {global?.language!=undefined && global.language["Details"]!=undefined? global?.language["Details"] : "Details"}
                     </Nav.Link>
                     <Nav.Link as="button" eventKey="nav-contact">
                         {/* History */}
-                        {global.language["History"]}
+                        {/* {global.language["History"]} */}
+                        {global?.language!=undefined && global.language["History"]!=undefined? global?.language["History"] : "History"}
+
                     </Nav.Link>
                 </Nav>
             </nav>
