@@ -838,5 +838,11 @@ ul.submenu li:hover ul.submenuchild {
     .overlay.changewallet .popup {
         max-width: 85%;
     }   
+    ul.mainmenu li a.its_new:hover::before {
+        content: unset;
+    }
+    .popup-mobile-menu .mainmenu .has-droupdown .submenu {
+        padding-left: 0px!important;
+    }
     
 }
